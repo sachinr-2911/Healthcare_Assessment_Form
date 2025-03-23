@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 
 # Load cleaned patient data
-df = pd.read_excel(r"https://github.com/sachinr-2911/Healthcare_Assessment_Form/blob/main/Cleaned_Patient_Data.xlsx")
+df = pd.read_excel(r"https://github.com/sachinr-2911/Healthcare_Assessment_Form/raw/main/Cleaned_Patient_Data.xlsx")
 
 # Ensure "Age" column is numeric
 df["Age"] = pd.to_numeric(df["Age"], errors="coerce").fillna(0).astype(int)  # Convert to integer, replacing non-numeric values with 0
